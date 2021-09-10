@@ -38,7 +38,7 @@ app.post(`/api/upload`, upload.single("photo"), (req, res) => {
   res.json({ image: finalImageURL });
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, (e) => {
   if (e) throw e;
